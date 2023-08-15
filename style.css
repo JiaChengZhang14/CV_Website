@@ -89,22 +89,8 @@ nav a {
     transform: scale(1.15);
 }
 
-/*estilos de la descripcion inicial*/
-main{
-    padding-top: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
-    user-select: none;
-}
 
-#presentation{
-    justify-content: center;
-  
-}
 
-#description{
-    padding-right: 40%;
-}
 
 
 /*Estilos del boton de descargar CV*/
@@ -145,6 +131,18 @@ main{
 
 /*Estilos texto del principio*/
 
+main{
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    user-select: none;
+}
+
+#presentation{
+    justify-content: center;
+  
+}
+
 #salut {
     color: rgb(63, 157, 149);
     font-family:monospace;
@@ -168,6 +166,7 @@ main{
     color: rgb(81, 93, 119);
     font-size: 115%;
     font-family: sans-serif;
+    padding-right: 40%;
 }
 
 /*Knowledge estilos*/
@@ -182,5 +181,66 @@ main{
     transition: max-height 0.5s ease-in-out; /* Animación suave */
 }
 
-/* Estilos generales */
 
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Cambios de estilo para dispositivos móviles */
+    header {
+        padding: 5%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: left;
+        padding: 0;
+        margin-right:14%;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 5%;
+    }
+
+    #about{
+        font-size: 100%;
+    }
+
+    #knowledge{
+        font-size: 100%;
+    }
+
+    #experience{
+        font-size: 100%;
+    }
+
+    #contact{
+        font-size: 100%;
+    }
+
+    main {
+        padding-top: 25%;
+    }
+
+    #name{
+        font-size: 120%;
+    }
+
+    #intro{
+        font-size: 80%;
+    }
+
+    #description{
+        padding-right: 10%;
+    }
+
+    #cvBox{
+        margin-right: 0%;
+        height: 40px;
+        justify-content: center;
+    }
+    
+    #cv{
+        margin-top: 8px;
+    }
+
+}
