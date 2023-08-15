@@ -4,7 +4,7 @@ body{
 
 /*estilos del menu superior*/
 header {
-    background-color: rgb(255, 255, 255); /* Color de fondo para visualización */
+    background-color: rgb(10, 25, 47); /* Color de fondo para visualización */
     padding: 2%; /* Espacio interno en el encabezado */
     position: fixed; /* Mantener el nav fijo en la parte superior */
     top: 0; /* Colocar el nav en la parte superior de la ventana */
