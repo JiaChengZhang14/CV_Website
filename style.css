@@ -1,0 +1,186 @@
+body{
+    background-color: rgb(10, 25, 47);
+}
+
+/*estilos del menu superior*/
+header {
+    background-color: rgb(255, 255, 255); /* Color de fondo para visualización */
+    padding: 2%; /* Espacio interno en el encabezado */
+    position: fixed; /* Mantener el nav fijo en la parte superior */
+    top: 0; /* Colocar el nav en la parte superior de la ventana */
+    width: 100%; /* Asegurarse de que el nav ocupe todo el ancho */
+    z-index: 100; /* Colocar el nav en la parte superior del z-index */
+}
+
+ 
+ nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(63, 157, 149);
+    display: inline-block;
+    position: relative; /* Crear un contexto de posición para los números */
+}
+
+
+#about{
+    margin-right: 3%;
+    font-family: monospace;
+    font-size: 130%;
+    display: inline-block; 
+    border: 2px solid rgb(213, 223, 255);
+    padding: 1% 1%; 
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+#about:hover {
+    transform: scale(1.15);
+}
+
+#knowledge{
+   margin-right: 3%;
+   font-family: monospace;
+   font-size: 130%;
+   display: inline-block; 
+   border: 2px solid rgb(213, 223, 255);
+   padding: 1% 1%; 
+   transition: 0.3s;
+   border-radius: 15px;
+}
+
+#knowledge:hover {
+    transform: scale(1.15);
+}
+
+#experience{
+   margin-right: 3%;
+   font-family: monospace;
+   font-size: 130%;
+   display: inline-block; 
+   border: 2px solid rgb(213, 223, 255);
+   padding: 1% 1%; 
+   transition: 0.3s;
+   border-radius: 15px;
+}
+
+#experience:hover {
+    transform: scale(1.15);
+}
+
+
+#contact{
+   margin-right: 3%;
+   font-family: monospace;
+   font-size: 130%;
+   display: inline-block; 
+   border: 2px solid rgb(213, 223, 255);
+   padding: 1% 1%; 
+   transition: 0.3s;
+   border-radius: 15px;
+}
+
+#contact:hover {
+    transform: scale(1.15);
+}
+
+/*estilos de la descripcion inicial*/
+main{
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    user-select: none;
+}
+
+#presentation{
+    justify-content: center;
+  
+}
+
+#description{
+    padding-right: 40%;
+}
+
+
+/*Estilos del boton de descargar CV*/
+
+#cvBox {
+    border: 2px solid rgb(63, 157, 149); /* Añadir un borde sólido de 1px en color gris */
+    padding: 1%; /* Espacio interno alrededor del contenido */
+    margin-right: 80%;
+    margin-top: 2%;
+    text-align: center; /* Centrar el texto horizontalmente */
+    border-radius: 10px;
+    transition: 0.3s; 
+
+}
+  
+#cv {
+    text-decoration: none; /* Eliminar la decoración de enlace subrayado */
+    color: rgb(63, 157, 149); /* Color del texto del enlace */
+    display: inline-block; 
+    padding: 2% 2%;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.2s; 
+    user-select: none;
+    font-family: monospace;
+    font-size: 115%;
+}
+
+#cvBox:hover {
+    color: #2599cf; /* Cambiar el color de fondo cuando se pasa el cursor */
+    transform: scale(1.15);
+}
+
+#cvSection{
+    padding-top: 1%;
+}
+
+
+/*Estilos texto del principio*/
+
+#salut {
+    color: rgb(63, 157, 149);
+    font-family:monospace;
+    font-size: 115%;
+}
+
+#name{
+    color: rgb(213, 223, 255);
+    font-size: 175%;
+    font-family: sans-serif;
+}
+
+#intro{
+    color: rgb(136, 146, 176);
+    font-size: 175%;
+    font-family: sans-serif;
+    font-weight: 100%;
+}
+
+#description{
+    color: rgb(81, 93, 119);
+    font-size: 115%;
+    font-family: sans-serif;
+}
+
+/*Knowledge estilos*/
+
+#knowledgeSection{
+    margin-top: 1000%;
+    color: rgb(213, 223, 255);
+    font-size: 175%;
+    font-family: sans-serif;
+    background-color: aquamarine;
+    max-height: 0; /* Ocultar el contenido al inicio */
+    transition: max-height 0.5s ease-in-out; /* Animación suave */
+}
+
+/* Estilos generales */
+
