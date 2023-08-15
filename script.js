@@ -1,6 +1,25 @@
-document.getElementById("knowledgeLink").addEventListener("click", function (event) {
-    event.preventDefault();
-    var targetElement = document.querySelector(this.getAttribute("href"));
+function goAbout() {
+    smoothScrollTo('main');
+}
 
-    targetElement.scrollIntoView({ behavior: "smooth" });
-});
+function goKnowledge() {
+    smoothScrollTo('knowledgeTitle');
+}
+
+function goExperience() {
+    smoothScrollTo('experienceTitle'); 
+}
+
+function goContact() {
+    smoothScrollTo('contactTitle'); 
+}
+
+function smoothScrollTo(targetId) {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+}

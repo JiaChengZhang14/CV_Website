@@ -2,6 +2,31 @@ body{
     background-color: rgb(10, 25, 47);
 }
 
+/* Estilo para la barra de desplazamiento */
+/* Estos estilos son específicos para navegadores basados en WebKit, como Chrome y Safari */
+
+/* Cambiar el color de fondo de la barra de desplazamiento */
+body::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Cambiar el fondo del riel de la barra de desplazamiento */
+body::-webkit-scrollbar-track {
+    background-color: rgb(10, 25, 47); /* Color de fondo del riel */
+}
+
+/* Cambiar el color de la barra de desplazamiento */
+body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la barra de desplazamiento */
+    border-radius: 5px; /* Bordes redondeados para la barra de desplazamiento */
+}
+
+/* Cambiar el color de la barra de desplazamiento cuando se pasa el cursor */
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color de la barra de desplazamiento al pasar el cursor */
+}
+
+
 /*estilos del menu superior*/
 header {
     background-color: rgb(10, 25, 47); /* Color de fondo para visualización */
@@ -20,19 +45,20 @@ header {
 
 }
 
-nav a {
+nav button {
+    background: none;
+    border:none;
     text-decoration: none;
     color: rgb(63, 157, 149);
-    display: inline-block;
-    position: relative; /* Crear un contexto de posición para los números */
+    font-family: monospace;
+    font-size: 130%;
+    user-select: none;
+    cursor: pointer;
 }
 
 
 #about{
     margin-right: 3%;
-    font-family: monospace;
-    font-size: 130%;
-    display: inline-block; 
     border: 2px solid rgb(213, 223, 255);
     padding: 1% 1%; 
     transition: 0.3s;
@@ -45,9 +71,6 @@ nav a {
 
 #knowledge{
    margin-right: 3%;
-   font-family: monospace;
-   font-size: 130%;
-   display: inline-block; 
    border: 2px solid rgb(213, 223, 255);
    padding: 1% 1%; 
    transition: 0.3s;
@@ -60,9 +83,6 @@ nav a {
 
 #experience{
    margin-right: 3%;
-   font-family: monospace;
-   font-size: 130%;
-   display: inline-block; 
    border: 2px solid rgb(213, 223, 255);
    padding: 1% 1%; 
    transition: 0.3s;
@@ -76,9 +96,6 @@ nav a {
 
 #contact{
    margin-right: 3%;
-   font-family: monospace;
-   font-size: 130%;
-   display: inline-block; 
    border: 2px solid rgb(213, 223, 255);
    padding: 1% 1%; 
    transition: 0.3s;
@@ -88,7 +105,6 @@ nav a {
 #contact:hover {
     transform: scale(1.15);
 }
-
 
 
 
@@ -172,53 +188,109 @@ main{
 /*Knowledge estilos*/
 
 #knowledgeSection{
-    margin-top: 1000%;
+    margin-top: 60%;
+    padding-bottom: 40%;
+    padding-top: 10%;
     color: rgb(213, 223, 255);
-    font-size: 175%;
-    font-family: sans-serif;
-    background-color: aquamarine;
     max-height: 0; /* Ocultar el contenido al inicio */
-    transition: max-height 0.5s ease-in-out; /* Animación suave */
+    display:grid;
+    justify-items: center;
+
 }
+
+#knowledgeTitle {
+    display: inline-block;
+    font-size: 250%;
+    font-family: sans-serif;
+    padding-top: 60%;
+}
+
+#knowledgeText{
+    font-family: monospace;
+    font-size: 200%;
+    margin-top: 7%;
+}
+
+#images{
+    display: flex;
+    justify-content: center;
+}
+
+/*Experience estilos*/
+
+#experienceSection{
+    margin-top: 30%;
+    padding-bottom: 60%;
+    padding-top: 10%;
+    color: rgb(213, 223, 255);
+    max-height: 0; /* Ocultar el contenido al inicio */
+    display:grid;
+    justify-items: center;
+}
+
+#experienceTitle{
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 250%;
+    padding-top: 60%;
+}
+
+#experienceImage{
+    display: flex;
+    justify-content: center;
+}
+
+/*contact estilos*/
+
+#contactSection{
+    margin-top: 30%;
+    padding-bottom: 60%;
+    padding-top: 10%;
+    color: rgb(213, 223, 255);
+    max-height: 0; /* Ocultar el contenido al inicio */
+    display:grid;
+    justify-items: center;
+}
+
+#contactTitle{
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 250%;
+}
+
+#contactText{
+    font-family: monospace;
+    font-size: 200%;
+    margin-top: 7%;
+}
+
 
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     /* Cambios de estilo para dispositivos móviles */
+
+    body{
+        overflow-y:auto;
+    }
+
     header {
-        padding: 5%;
+        padding-top: 8%;
     }
 
     nav {
         display: flex;
-        justify-content: left;
-        padding: 0;
-        margin-right:14%;
+        justify-content: center;
+        
     }
 
-    nav a {
-        display: block;
+    nav button {
         margin-bottom: 5%;
-    }
-
-    #about{
-        font-size: 100%;
-    }
-
-    #knowledge{
-        font-size: 100%;
-    }
-
-    #experience{
-        font-size: 100%;
-    }
-
-    #contact{
-        font-size: 100%;
+        font-size: 60%;
     }
 
     main {
-        padding-top: 25%;
+        padding-top: 30%;
     }
 
     #name{
@@ -243,4 +315,86 @@ main{
         margin-top: 8px;
     }
 
+    #knowledgeSection{
+        margin-top: 100%;
+        padding-bottom: 250%;
+     
+    }
+    #knowledgeTitle {
+        padding-top: 50%;
+    }
+
+    #images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #images > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #images img {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+    
+    #knowledgeText{
+        font-size: 120%;
+    }
+
+    #experienceSection {
+
+        text-align: center;
+
+    }
+
+    #experienceTitle {
+        padding-top: 50%;
+        margin-top: 150%;
+        color: rgb(213, 223, 255);
+    }
+
+    #experienceImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #experienceImage img {
+        max-width: 100%;
+    }
+
+
+    #contactSection {
+        text-align: center;
+    }
+
+    #contactTitle {
+        padding-top: 50%;
+        margin-top: 350%;
+        color: rgb(213, 223, 255);
+        margin-right: 25%;
+    }
+
+    #contactImages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 20%;
+    }
+
+    #contactImages > div {
+        margin: 10px;
+    }
+
+    #contactText {
+        color: rgb(213, 223, 255);
+        font-size: 100%;
+        margin-right: 25%;
+    }
 }
