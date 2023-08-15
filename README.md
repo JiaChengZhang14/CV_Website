@@ -2,7 +2,7 @@
 
 <img src="images/buscador.png" width="10%" align="right">
 
-Este es el repositorio para mi sitio web personal. Es un espacio donde comparto información sobre mí, mis proyectos y habilidades. Puedes visitar el sitio en [https://tu-sitio-web.com](https://tu-sitio-web.com).
+Este es el repositorio para mi sitio web personal. Es un espacio donde comparto información sobre mí, mis proyectos y habilidades. Puedes visitar el sitio en [https://jiachengzhang14.github.io/CV_Website.github.io/](https://jiachengzhang14.github.io/CV_Website.github.io/).
 
 ## Contenido
 
