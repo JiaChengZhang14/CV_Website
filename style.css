@@ -1,6 +1,21 @@
-body{
-    background-color: rgb(10, 25, 47);
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
+
+body {
+  background: radial-gradient(circle, rgb(10, 25, 47) 0%, #042e52 100%);
+  overflow-x: hidden;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
 
 /* Estilo para la barra de desplazamiento */
 /* Estos estilos son específicos para navegadores basados en WebKit, como Chrome y Safari */
@@ -29,7 +44,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*estilos del menu superior*/
 header {
-    background-color: rgb(10, 25, 47); /* Color de fondo para visualización */
+    background: radial-gradient(circle, rgb(10, 25, 47) 0%, #042e52 100%); /* Color de fondo para visualización */
     padding: 2%; /* Espacio interno en el encabezado */
     position: fixed; /* Mantener el nav fijo en la parte superior */
     top: 0; /* Colocar el nav en la parte superior de la ventana */
